@@ -1,0 +1,2 @@
+C:\Users\Personal\source\repos\SistemaInventario\Sys.Inventario\EFRepository\obj\Debug\EFRepository.csprojAssemblyReference.cache
+C:\Users\Personal\source\repos\SistemaInventario\Sys.Inventario\EFRepository\obj\Debug\EFRepository.csproj.CoreCompileInputs.cache
