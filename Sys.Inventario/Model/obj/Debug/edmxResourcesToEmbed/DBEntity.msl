@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Sistema_ContableModelStoreContainer" CdmEntityContainer="Entidades">
+    <EntitySetMapping Name="Annexes">
+      <EntityTypeMapping TypeName="Sistema_ContableModel.Annexes">
+        <MappingFragment StoreEntitySet="Annexes">
+          <ScalarProperty Name="IdAnnexes" ColumnName="IdAnnexes" />
+          <ScalarProperty Name="Files" ColumnName="Files" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Catalogue">
+      <EntityTypeMapping TypeName="Sistema_ContableModel.Catalogue">
+        <MappingFragment StoreEntitySet="Catalogue">
+          <ScalarProperty Name="IdCatalo" ColumnName="IdCatalo" />
+          <ScalarProperty Name="Catalo" ColumnName="Catalo" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Client">
+      <EntityTypeMapping TypeName="Sistema_ContableModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="Identitys" ColumnName="Identitys" />
+          <ScalarProperty Name="Names" ColumnName="Names" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Money" ColumnName="Money" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="TimezoneId" ColumnName="TimezoneId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Permits">
+      <EntityTypeMapping TypeName="Sistema_ContableModel.Permits">
+        <MappingFragment StoreEntitySet="Permits">
+          <ScalarProperty Name="IdPermits" ColumnName="IdPermits" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="Modify" ColumnName="Modify" />
+          <ScalarProperty Name="Edit" ColumnName="Edit" />
+          <ScalarProperty Name="Deletes" ColumnName="Deletes" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="Sistema_ContableModel.Products">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="Idproducts" ColumnName="Idproducts" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Names" ColumnName="Names" />
+          <ScalarProperty Name="Mark" ColumnName="Mark" />
+          <ScalarProperty Name="unitmeasure" ColumnName="unitmeasure" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="Utility" ColumnName="Utility" />
+          <ScalarProperty Name="WitnessedSale" ColumnName="WitnessedSale" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+          <ScalarProperty Name="ActiveDate" ColumnName="ActiveDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provider">
+      <EntityTypeMapping TypeName="Sistema_ContableModel.Provider">
+        <MappingFragment StoreEntitySet="Provider">
+          <ScalarProperty Name="IdProvider" ColumnName="IdProvider" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="ProductsId" ColumnName="ProductsId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sales">
+      <EntityTypeMapping TypeName="Sistema_ContableModel.Sales">
+        <MappingFragment StoreEntitySet="Sales">
+          <ScalarProperty Name="IdSale" ColumnName="IdSale" />
+          <ScalarProperty Name="Sale" ColumnName="Sale" />
+          <ScalarProperty Name="UsersId" ColumnName="UsersId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+          <ScalarProperty Name="NetCost" ColumnName="NetCost" />
+          <ScalarProperty Name="GreatCost" ColumnName="GreatCost" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shopping">
+      <EntityTypeMapping TypeName="Sistema_ContableModel.Shopping">
+        <MappingFragment StoreEntitySet="Shopping">
+          <ScalarProperty Name="IdShopping" ColumnName="IdShopping" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+          <ScalarProperty Name="NetCost" ColumnName="NetCost" />
+          <ScalarProperty Name="GreatCost" ColumnName="GreatCost" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Taxes">
+      <EntityTypeMapping TypeName="Sistema_ContableModel.Taxes">
+        <MappingFragment StoreEntitySet="Taxes">
+          <ScalarProperty Name="IdTaxes" ColumnName="IdTaxes" />
+          <ScalarProperty Name="Taxes1" ColumnName="Taxes" />
+          <ScalarProperty Name="Percents" ColumnName="Percents" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="SaleId" ColumnName="SaleId" />
+          <ScalarProperty Name="Shopping" ColumnName="Shopping" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Sistema_ContableModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Idusers" ColumnName="Idusers" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="NameUsers" ColumnName="NameUsers" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="Names" ColumnName="Names" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="RolId" ColumnName="RolId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

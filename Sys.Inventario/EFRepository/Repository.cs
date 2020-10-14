@@ -1,11 +1,11 @@
-﻿using Repository;
+﻿using PagedList;
+using Repository;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using PagedList;
 using System.Data.Entity;
 using System.Data.Entity.Validation;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace EFRepository
 {
@@ -28,6 +28,7 @@ namespace EFRepository
                 Result = Context.Set<TEntity>().Add(newEntity);
                 TrySaveChanges();
             }
+            //guarda un solo registro
             catch (DbEntityValidationException dbEx)
             {
                 string strError = "";

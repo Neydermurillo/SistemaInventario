@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Sistema_ContableModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Annexes">
+    <Key>
+      <PropertyRef Name="IdAnnexes" />
+    </Key>
+    <Property Name="IdAnnexes" Type="int" Nullable="false" />
+    <Property Name="Files" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="ProductId" Type="int" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Catalogue">
+    <Key>
+      <PropertyRef Name="IdCatalo" />
+    </Key>
+    <Property Name="IdCatalo" Type="int" Nullable="false" />
+    <Property Name="Catalo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Active" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="Identitys" />
+    </Key>
+    <Property Name="Identitys" Type="int" Nullable="false" />
+    <Property Name="Names" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Money" Type="varchar" MaxLength="5" />
+    <Property Name="Logo" Type="varchar" MaxLength="50" />
+    <Property Name="TimezoneId" Type="int" />
+    <Property Name="Type" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Permits">
+    <Key>
+      <PropertyRef Name="IdPermits" />
+    </Key>
+    <Property Name="IdPermits" Type="int" Nullable="false" />
+    <Property Name="GroupId" Type="int" Nullable="false" />
+    <Property Name="Modify" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Edit" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Deletes" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="Idproducts" />
+    </Key>
+    <Property Name="Idproducts" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="50" />
+    <Property Name="Names" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Mark" Type="varchar" MaxLength="50" />
+    <Property Name="unitmeasure" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="state" Type="bit" Nullable="false" />
+    <Property Name="Utility" Type="int" />
+    <Property Name="WitnessedSale" Type="decimal" Precision="8" Scale="2" />
+    <Property Name="Reference" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Cost" Type="decimal" Precision="8" Scale="2" />
+    <Property Name="Stock" Type="int" />
+    <Property Name="RegistrationDate" Type="date" />
+    <Property Name="ActiveDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Provider">
+    <Key>
+      <PropertyRef Name="IdProvider" />
+    </Key>
+    <Property Name="IdProvider" Type="int" Nullable="false" />
+    <Property Name="ClientId" Type="int" Nullable="false" />
+    <Property Name="ProductsId" Type="int" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sales">
+    <Key>
+      <PropertyRef Name="IdSale" />
+    </Key>
+    <Property Name="IdSale" Type="int" Nullable="false" />
+    <Property Name="Sale" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UsersId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="UnitCost" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="TotalCost" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="NetCost" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="GreatCost" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Quantity" Type="numeric" Precision="18" Scale="3" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Shopping">
+    <Key>
+      <PropertyRef Name="IdShopping" />
+    </Key>
+    <Property Name="IdShopping" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="ClientId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="numeric" Precision="18" Scale="3" Nullable="false" />
+    <Property Name="UnitCost" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="TotalCost" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="NetCost" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="GreatCost" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Taxes">
+    <Key>
+      <PropertyRef Name="IdTaxes" />
+    </Key>
+    <Property Name="IdTaxes" Type="int" Nullable="false" />
+    <Property Name="Taxes" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Percents" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="Amount" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="SaleId" Type="int" />
+    <Property Name="Shopping" Type="int" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Idusers" />
+    </Key>
+    <Property Name="Idusers" Type="int" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="NameUsers" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ClientId" Type="int" Nullable="false" />
+    <Property Name="Names" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Active" Type="bit" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="RolId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Sales__UsersId__6C190EBB">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Idusers" />
+      </Principal>
+      <Dependent Role="Sales">
+        <PropertyRef Name="UsersId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Annexes_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
+    <End Role="Annexes" Type="Self.Annexes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Idproducts" />
+      </Principal>
+      <Dependent Role="Annexes">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Client_Catalogue">
+    <End Role="Catalogue" Type="Self.Catalogue" Multiplicity="1" />
+    <End Role="Client" Type="Self.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catalogue">
+        <PropertyRef Name="IdCatalo" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="Type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Client_Catalogue1">
+    <End Role="Catalogue" Type="Self.Catalogue" Multiplicity="1" />
+    <End Role="Client" Type="Self.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catalogue">
+        <PropertyRef Name="IdCatalo" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="Type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Permits_Catalogue">
+    <End Role="Catalogue" Type="Self.Catalogue" Multiplicity="1" />
+    <End Role="Permits" Type="Self.Permits" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catalogue">
+        <PropertyRef Name="IdCatalo" />
+      </Principal>
+      <Dependent Role="Permits">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Provider_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Provider" Type="Self.Provider" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="Identitys" />
+      </Principal>
+      <Dependent Role="Provider">
+        <PropertyRef Name="ClientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Provider_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="Provider" Type="Self.Provider" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Idproducts" />
+      </Principal>
+      <Dependent Role="Provider">
+        <PropertyRef Name="ProductsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sales_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Idproducts" />
+      </Principal>
+      <Dependent Role="Sales">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Shopping_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Shopping" Type="Self.Shopping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="Identitys" />
+      </Principal>
+      <Dependent Role="Shopping">
+        <PropertyRef Name="ClientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Shopping_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="Shopping" Type="Self.Shopping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Idproducts" />
+      </Principal>
+      <Dependent Role="Shopping">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Taxes_Sales">
+    <End Role="Sales" Type="Self.Sales" Multiplicity="0..1" />
+    <End Role="Taxes" Type="Self.Taxes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sales">
+        <PropertyRef Name="IdSale" />
+      </Principal>
+      <Dependent Role="Taxes">
+        <PropertyRef Name="SaleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Taxes_Shopping">
+    <End Role="Shopping" Type="Self.Shopping" Multiplicity="0..1" />
+    <End Role="Taxes" Type="Self.Taxes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Shopping">
+        <PropertyRef Name="IdShopping" />
+      </Principal>
+      <Dependent Role="Taxes">
+        <PropertyRef Name="Shopping" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Catalogue">
+    <End Role="Catalogue" Type="Self.Catalogue" Multiplicity="1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catalogue">
+        <PropertyRef Name="IdCatalo" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="RolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Client1">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="Identitys" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="ClientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Sistema_ContableModelStoreContainer">
+    <EntitySet Name="Annexes" EntityType="Self.Annexes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Catalogue" EntityType="Self.Catalogue" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Client" EntityType="Self.Client" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Permits" EntityType="Self.Permits" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Provider" EntityType="Self.Provider" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sales" EntityType="Self.Sales" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Shopping" EntityType="Self.Shopping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Taxes" EntityType="Self.Taxes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Sales__UsersId__6C190EBB" Association="Self.FK__Sales__UsersId__6C190EBB">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Sales" EntitySet="Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Annexes_Products" Association="Self.FK_Annexes_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Annexes" EntitySet="Annexes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Client_Catalogue" Association="Self.FK_Client_Catalogue">
+      <End Role="Catalogue" EntitySet="Catalogue" />
+      <End Role="Client" EntitySet="Client" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Client_Catalogue1" Association="Self.FK_Client_Catalogue1">
+      <End Role="Catalogue" EntitySet="Catalogue" />
+      <End Role="Client" EntitySet="Client" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Permits_Catalogue" Association="Self.FK_Permits_Catalogue">
+      <End Role="Catalogue" EntitySet="Catalogue" />
+      <End Role="Permits" EntitySet="Permits" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Provider_Client" Association="Self.FK_Provider_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Provider" EntitySet="Provider" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Provider_Products" Association="Self.FK_Provider_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Provider" EntitySet="Provider" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sales_Products" Association="Self.FK_Sales_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Sales" EntitySet="Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Shopping_Client" Association="Self.FK_Shopping_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Shopping" EntitySet="Shopping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Shopping_Products" Association="Self.FK_Shopping_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Shopping" EntitySet="Shopping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Taxes_Sales" Association="Self.FK_Taxes_Sales">
+      <End Role="Sales" EntitySet="Sales" />
+      <End Role="Taxes" EntitySet="Taxes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Taxes_Shopping" Association="Self.FK_Taxes_Shopping">
+      <End Role="Shopping" EntitySet="Shopping" />
+      <End Role="Taxes" EntitySet="Taxes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Catalogue" Association="Self.FK_Users_Catalogue">
+      <End Role="Catalogue" EntitySet="Catalogue" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Client1" Association="Self.FK_Users_Client1">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

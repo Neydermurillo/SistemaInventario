@@ -78,3 +78,15 @@ C:\Users\Personal\source\repos\SistemaInventario\Sys.Inventario\Sys.Inventario\o
 C:\Users\Personal\source\repos\SistemaInventario\Sys.Inventario\Sys.Inventario\obj\Debug\Sys.Inventario.csproj.CopyComplete
 C:\Users\Personal\source\repos\SistemaInventario\Sys.Inventario\Sys.Inventario\obj\Debug\Sys.Inventario.dll
 C:\Users\Personal\source\repos\SistemaInventario\Sys.Inventario\Sys.Inventario\obj\Debug\Sys.Inventario.pdb
+C:\Users\Personal\source\repos\SistemaInventario\Sys.Inventario\Sys.Inventario\bin\EFRepository.dll
+C:\Users\Personal\source\repos\SistemaInventario\Sys.Inventario\Sys.Inventario\bin\Model.dll
+C:\Users\Personal\source\repos\SistemaInventario\Sys.Inventario\Sys.Inventario\bin\Repository.dll
+C:\Users\Personal\source\repos\SistemaInventario\Sys.Inventario\Sys.Inventario\bin\EntityFramework.dll
+C:\Users\Personal\source\repos\SistemaInventario\Sys.Inventario\Sys.Inventario\bin\PagedList.dll
+C:\Users\Personal\source\repos\SistemaInventario\Sys.Inventario\Sys.Inventario\bin\EFRepository.pdb
+C:\Users\Personal\source\repos\SistemaInventario\Sys.Inventario\Sys.Inventario\bin\EFRepository.dll.config
+C:\Users\Personal\source\repos\SistemaInventario\Sys.Inventario\Sys.Inventario\bin\Model.pdb
+C:\Users\Personal\source\repos\SistemaInventario\Sys.Inventario\Sys.Inventario\bin\Model.dll.config
+C:\Users\Personal\source\repos\SistemaInventario\Sys.Inventario\Sys.Inventario\bin\Repository.pdb
+C:\Users\Personal\source\repos\SistemaInventario\Sys.Inventario\Sys.Inventario\bin\EntityFramework.xml
+C:\Users\Personal\source\repos\SistemaInventario\Sys.Inventario\Sys.Inventario\bin\PagedList.xml
