@@ -102,6 +102,148 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\custom.css" />
+    <Content Include="Content\css\main.css" />
+    <Content Include="Content\css\main.min.css" />
+    <Content Include="Content\favicon.ico" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\img\app-icon1.png" />
+    <Content Include="Content\img\app-icon2.png" />
+    <Content Include="Content\img\app-icon3.png" />
+    <Content Include="Content\img\app-icon4.png" />
+    <Content Include="Content\img\app-icon5.png" />
+    <Content Include="Content\img\app-icon6.png" />
+    <Content Include="Content\img\app-icon7.png" />
+    <Content Include="Content\img\app-icon8.png" />
+    <Content Include="Content\img\avatar-150.jpg" />
+    <Content Include="Content\img\avatar-200.jpg" />
+    <Content Include="Content\img\avatar-72.jpg" />
+    <Content Include="Content\img\avatar1-120.jpg" />
+    <Content Include="Content\img\avatar1-72.jpg" />
+    <Content Include="Content\img\avatar2-120.jpg" />
+    <Content Include="Content\img\avatar2-200.jpg" />
+    <Content Include="Content\img\avatar2-72.jpg" />
+    <Content Include="Content\img\avatar3-120.jpg" />
+    <Content Include="Content\img\avatar3-72.jpg" />
+    <Content Include="Content\img\avatar4-120.jpg" />
+    <Content Include="Content\img\avatar4-72.jpg" />
+    <Content Include="Content\img\avatar5-120.jpg" />
+    <Content Include="Content\img\avatar5-72.jpg" />
+    <Content Include="Content\img\avatar6-120.jpg" />
+    <Content Include="Content\img\avatar6-72.jpg" />
+    <Content Include="Content\img\avatar7-72.jpg" />
+    <Content Include="Content\img\avatar8-72.jpg" />
+    <Content Include="Content\img\billing.jpg" />
+    <Content Include="Content\img\board-task-img1.png" />
+    <Content Include="Content\img\board-task-img2.jpg" />
+    <Content Include="Content\img\board-task-img2.png" />
+    <Content Include="Content\img\board-task-img3.png" />
+    <Content Include="Content\img\board-task-img4.jpg" />
+    <Content Include="Content\img\board-task-img5.jpg" />
+    <Content Include="Content\img\browse1.jpg" />
+    <Content Include="Content\img\browse10.jpg" />
+    <Content Include="Content\img\browse11.jpg" />
+    <Content Include="Content\img\browse12.jpg" />
+    <Content Include="Content\img\browse2.jpg" />
+    <Content Include="Content\img\browse3.jpg" />
+    <Content Include="Content\img\browse4.jpg" />
+    <Content Include="Content\img\browse5.jpg" />
+    <Content Include="Content\img\browse6.jpg" />
+    <Content Include="Content\img\browse7.jpg" />
+    <Content Include="Content\img\browse8.jpg" />
+    <Content Include="Content\img\browse9.jpg" />
+    <Content Include="Content\img\candidate1.jpg" />
+    <Content Include="Content\img\candidate2.jpg" />
+    <Content Include="Content\img\candidate3.jpg" />
+    <Content Include="Content\img\candidate4.jpg" />
+    <Content Include="Content\img\candidate5.jpg" />
+    <Content Include="Content\img\candidate6.jpg" />
+    <Content Include="Content\img\candidate7.jpg" />
+    <Content Include="Content\img\candidate8.jpg" />
+    <Content Include="Content\img\candidate9.jpg" />
+    <Content Include="Content\img\deadline1.jpg" />
+    <Content Include="Content\img\deadline2.jpg" />
+    <Content Include="Content\img\deadline3.jpg" />
+    <Content Include="Content\img\event1.jpg" />
+    <Content Include="Content\img\event2.jpg" />
+    <Content Include="Content\img\ewg_white.png" />
+    <Content Include="Content\img\favicon.png" />
+    <Content Include="Content\img\feed1.jpg" />
+    <Content Include="Content\img\feed2.jpg" />
+    <Content Include="Content\img\feed3.jpg" />
+    <Content Include="Content\img\feed4.jpg" />
+    <Content Include="Content\img\feed5.jpg" />
+    <Content Include="Content\img\feed6.jpg" />
+    <Content Include="Content\img\feed7.jpg" />
+    <Content Include="Content\img\feed8.jpg" />
+    <Content Include="Content\img\feed9.jpg" />
+    <Content Include="Content\img\gallery1.jpg" />
+    <Content Include="Content\img\gallery2.jpg" />
+    <Content Include="Content\img\gallery3.jpg" />
+    <Content Include="Content\img\gallery4.jpg" />
+    <Content Include="Content\img\icon-doc.svg" />
+    <Content Include="Content\img\icon-dots.svg" />
+    <Content Include="Content\img\icon-intro1.svg" />
+    <Content Include="Content\img\icon-intro2.svg" />
+    <Content Include="Content\img\icon-intro3.svg" />
+    <Content Include="Content\img\icon-pdf.svg" />
+    <Content Include="Content\img\load.gif" />
+    <Content Include="Content\img\login2.jpg" />
+    <Content Include="Content\img\logo-inverse.svg" />
+    <Content Include="Content\img\logo-login.svg" />
+    <Content Include="Content\img\logo-visa.png" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\logoinventario.png" />
+    <Content Include="Content\img\logoinventario_white.png" />
+    <Content Include="Content\img\medal1.svg" />
+    <Content Include="Content\img\medal2.svg" />
+    <Content Include="Content\img\medal3.svg" />
+    <Content Include="Content\img\medal4.svg" />
+    <Content Include="Content\img\medal5.svg" />
+    <Content Include="Content\img\onboard.png" />
+    <Content Include="Content\img\paypal.svg" />
+    <Content Include="Content\img\preloader.gif" />
+    <Content Include="Content\img\price-icon.svg" />
+    <Content Include="Content\img\price-icon2.svg" />
+    <Content Include="Content\img\price-icon3.svg" />
+    <Content Include="Content\img\price-icon4.svg" />
+    <Content Include="Content\img\profile-card-cover.jpg" />
+    <Content Include="Content\img\project-board1.jpg" />
+    <Content Include="Content\img\project-board2.jpg" />
+    <Content Include="Content\img\project-board3.jpg" />
+    <Content Include="Content\img\project-board4.jpg" />
+    <Content Include="Content\img\project-board5.jpg" />
+    <Content Include="Content\img\project-board6.jpg" />
+    <Content Include="Content\img\project-board7.jpg" />
+    <Content Include="Content\img\project-card1.jpg" />
+    <Content Include="Content\img\project-card2.jpg" />
+    <Content Include="Content\img\project-card3.jpg" />
+    <Content Include="Content\img\project-card4.jpg" />
+    <Content Include="Content\img\project-card5.jpg" />
+    <Content Include="Content\img\project-card6.jpg" />
+    <Content Include="Content\img\project-card7.jpg" />
+    <Content Include="Content\img\project-card8.jpg" />
+    <Content Include="Content\img\project-card9.jpg" />
+    <Content Include="Content\img\recent1.jpg" />
+    <Content Include="Content\img\recent2.jpg" />
+    <Content Include="Content\img\recent3.jpg" />
+    <Content Include="Content\img\recent4.jpg" />
+    <Content Include="Content\img\recent5.jpg" />
+    <Content Include="Content\img\sidebar-icon1.png" />
+    <Content Include="Content\img\sidebar-icon2.png" />
+    <Content Include="Content\img\sidebar-icon3.png" />
+    <Content Include="Content\img\sidebar-icon4.png" />
+    <Content Include="Content\img\sidebar-icon5.png" />
+    <Content Include="Content\img\sidebar-icon6.png" />
+    <Content Include="Content\img\tweet1.jpg" />
+    <Content Include="Content\img\tweet2.jpg" />
+    <Content Include="Content\img\tweet3.jpg" />
+    <Content Include="Content\img\tweet4.jpg" />
+    <Content Include="Content\img\visa.png" />
+    <Content Include="Content\js\custom.js" />
+    <Content Include="Content\js\jquery.plugins.js" />
+    <Content Include="Content\js\main.js" />
+    <Content Include="Content\js\main.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -109,6 +251,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Attributes\AutenticadoAttribute.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -118,7 +261,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Content\css\.DS_Store" />
+    <Content Include="Content\css\main.min.css.map" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\img\.DS_Store" />
+    <Content Include="Content\js\jquery.form.min.js.map" />
+    <Content Include="Content\js\main.min.js.map" />
     <None Include="packages.config" />
+    <Content Include="Views\Shared\_LayoutAccount.cshtml" />
+    <Content Include="Views\Account\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -128,7 +283,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
